@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>War Stories</title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Darren Provine" />
+  <meta name="generator" content="vi" />
+  <script type="text/javascript" src="canvas.js"> </script>
+
+  <link rel="stylesheet" type="text/css" href="canvas.css" />
+  <link rel="stylesheet" type="text/css" href="webline.css" />
+<style type="text/css">
+
+
+#can {
+         text-align: center;
+
+     }
+ #link {
+
+                top: 500px;
+                left: 0px;
+                position: absolute;
+
+            }
+
+
+
+ body
+{
+ background-color:#000000;
+ background-image:url('map.png');
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-position:center;
+
+        margin: 0 auto;
+        padding:0px;
+  }
+#wrapper { width: 700px;
+             left: 50%;
+             margin-left: -350px;
+             position: absolute;
+  }
+
+</style>
+
+
+
+</head>
+
+<body onload="setup();">
+
+<div id = "can">
+<canvas id="circle" width="800" height="618"
+        onMouseUp="mouseUp(this);">
+This text is displayed if your browser does not support HTML5 Canvas.
+</canvas>
+</div>
+
+<div id = "link">
+<a href ="http://elvis.rowan.edu/~zimmer30/web/Amish/Amish_info.html"
+><img src = "./amish.png" alt = "Off to build a barn" height
+="100" width="100"/></a >
+</div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en">
+<head>
+
+  <title>Home of the Fighting Amish</title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Nathaniel Zimmerman" />
+  <meta name="generator" content="vi" />
+  <link rel="stylesheet" href="webline.css" />
+  <script type="text/javascript"
+          src="http://code.jquery.com/jquery-1.9.0.min.js"> </script>
+  <script type="text/javascript"
+          src="./AjaxFunctions.js"> </script>
+
+
+<!-- Script to fade in entire page on load -->
+<script type="text/javascript">
+function Intro()
+{$("#page").fadeOut(3000);}
+</script>
+
+<!-- Script for hiding link to main site and referers-->
+<script type="text/JavaScript">
+function SwitchMenu(obj){
+   if(document.getElementById){
+   var el = document.getElementById(obj);
+      if(el.style.display != "block"){
+         el.style.display = "block";
+      }else{
+         el.style.display = "none";
+      }
+   }
+}
+</script>
+
+<style type="text/css">
+@media (min-width: 700px) {
+#page { 
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #000000;}  
+#marquee {
+    text-align:center;}
+#valid{ 
+    top: 200px;
+    text-align: left;}
+#mp3 {
+    top: 700px;
+    text-align: left;}
+#right{
+    top: 635px;
+    text-align: right;}
+
+body
+{ 
+ background-color:#000000;
+ background-image:url('projector.png');
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-position:center; 
+
+ margin: 0 auto;
+ padding:0px;
+}
+
+#wrapper { width: 700px;
+           left: 50%;
+           margin-left: -350px;
+           position: absolute;
+  }
+}
+</style>
+</head>
+
+<!-- Script load on startup -->
+<body onload="setInterval(Intro,0); start();">
+<div id = "page">
+</div>
+
+
+<!-- Code for marquee, note: outdated and causes referer to freak out, but a lot easier then anything found 
+in javascript so far, still subject to upgrade -->
+
+<div id = "marquee">
+<marquee align="center" width="600" height = "600"  scrollamount="2" direction="up" loop="true"  
+onmouseover="this.stop();" onmouseout="this.start();">
+         
+        <b>Welcome, to the homepage of the Fighting Amish paintball group, please click the button in the 
+        corner to navigate to our main site, and see all our info.</b><br><br>
+	<a href="http://www.skirmish.com/">Please view the official Skirmish Site for more info</a><br><br>
+	2/26/13 - Added roster and status link, please check to see what you need to bring.<br><br>
+	2/27/13 - Added dues, if your initial $110 has been paid, the additional money isnt due until the day
+	before the event.<br><br>
+	2/28/13 - Added Supplies List, please, please read and have everything ready. <br><br>
+	3/8/13 - I have ordered six CO2 tanks, if you requested one from me, please confirm you want it.<br><br>
+	3/12/13 - Database for contact info is in beta, test if you can and add your info.<br><br>
+	3/26/13 - All our info is now located at the link below.<br>
+	<a href = 'http://elvis.rowan.edu/~zimmer30/web/Amish/Amish_info.html'>Click to see all our info</a><br><br>
+	3/28/13 - First practice is set for Saturday March 30th at noon, please contact me with your availability.<br><br>
+	4/18/13 - Many of you have expressed interest in having another game weekend, a small fee will be required if 
+	we do so, and if we wish to do it before the semester ends I will need assistance with planning.<br><br>
+	4/23/13 - Everyone needs to fill out a waiver to present at the window see: <br>
+	<a href = 'http://www.skirmish.com/wp-content/uploads/2012/03/SkWavier03012012.pdf'>Waiver</a><br><br>
+
+</marquee>
+</div>
+
+<!-- Div for mouseover to view hidden objects -->
+<div style="position: fixed; right: 10px; bottom: 5px; background: transparent; color: #F8FBEF; font-size: 
+20px; font-family: FixedSys; font-weight: normal;">
+<a href="#" onmouseover="SwitchMenu('downmenu')" onmouseout="SwitchMenu('downmenu')" >Hover Here</a>
+<div id="downmenu" onmouseover="SwitchMenu('downmenu')" onmouseout="SwitchMenu('downmenu')" 
+style="display: none;">
+
+<!-- Start hidden objects -->
+<a href ="http://elvis.rowan.edu/~zimmer30/web/Amish/Amish_info.html">
+<img src = "./amish.png" alt = "Off to build a barn" height="100" width="100"/></a >
+
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+<img style="border:0;width:88px;height:31px;float:right;"
+       src="http://jigsaw.w3.org/css-validator/images/vcss" 
+       alt="Valid CSS!" /></a>
+
+<a href="http://validator.w3.org/check/referer">
+<img style="border:0;width:88px;height:31px;float:right;"
+       src="http://www.w3.org/Icons/valid-xhtml11"
+       alt="Valid XHTML 1.1!" /></a>
+
+</div>
+</div>
+<!-- End hidden objects -->
+
+
+<div id = "mp3">
+<embed src="sisters.mp3" width="140" height="40" autostart="true" loop="FALSE">
+
+<!--<embed src="PleaseBeKind.mp3" width="140" height="40" autostart="true" loop="FALSE">-->
+</div>
+
+
+</body>
+</html>

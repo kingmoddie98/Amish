@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en">
+<head>
+
+  <title>Info for  the Fighting Amish</title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Nathaniel Zimmerman" />
+  <meta name="generator" content="vi" />
+  <LINK href="info.css" rel="stylesheet" type="text/css">
+
+<script 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+			
+		});
+	</script>
+
+
+</head>
+
+<div id="slideshow">
+   <div>
+     <img src="./marquee/marquee1.jpg" height="300" width="500">
+   </div>
+   <div>
+     <img src="./marquee/marquee2.jpg" height="300" width="500">
+   </div>
+  <div>
+     <img src="./marquee/marquee3.jpg" height="300" width="500">
+   </div>
+ <div>
+     <img src="./marquee/marquee4.jpg" height="300" width="500">
+   </div>
+ <div>
+     <img src="./marquee/marquee5.jpg" height="300" width="500">
+   </div>
+
+
+
+</div>
+
+
+
+
+
+
+<!--
+<div id = "marquee">
+<marquee align="center" width="1350" height = "400"  scrollamount="2"
+direction="left" loop="true"
+onmouseover="this.stop();" onload ="this.fadeIn()";
+onmouseout="this.start();"> <font color="#8A4B08"><strong>
+<img src = "./marquee/marquee1.jpg" alt = "Off to build a barn" height ="200"width="300" >
+<img src = "./marquee/marquee2.jpg" alt = "The women may be at home, check to see" height = "200" width = "300">
+<img src = "./marquee/marquee3.jpg" alt = "Is it really that important" height = "200" width = "300">
+<img src = "./marquee/marquee4.jpg" alt = "Fine ill get a hold of Brother Amadeaus" height = "200" width = 
+"300">
+<img src = "./marquee/marquee5.jpg" alt = "Wow something really went wrong here" height = "200" width = "300">
+</strong></font></marquee></div></div>
+</div>
+-->
+
+
+
+<div id = "buttons">
+<a href="http://elvis.rowan.edu/~zimmer30/web/Amish/Supplies.html" 
+class="Button1">Supplies</a>
+<a href="http://elvis.rowan.edu/~zimmer30/web/Amish/Amish_Payment.html"
+class="Button1">Dues</a>
+<a href="http://elvis.rowan.edu/~zimmer30/web/Amish/2013Roster.html"
+class="Button1">Roster</a>
+
+<a href="http://elvis.rowan.edu/~zimmer30/web/Amish/APASS/show.php"
+class="Button1">Contact</a>
+
+<a href="http://elvis.rowan.edu/~zimmer30/web/Amish/ACHECK/show.php"
+class="Button1">Checklist</a>
+
+<a href="http://elvis.rowan.edu/~zimmer30/web/Amish/Amish.html"
+class="Button1">News</a>
+
+<a href="http://elvis.rowan.edu/~zimmer30/web/Amish/war.html"
+class="Button1">Stories</a>
+
+</div>
+
+
+<div id = "button2">
+<a href = ""
+class="Button1">Video</a>
+<a href = ""
+class="Button1">Countdown</a>
+<a href = ""
+class="Button1">About</a>
+</div>
+
+
+<div id = "hidden1">
+
+<video width="320" height="240" controls>
+  <source src="al.mp4" type="video/mp4">
+  </object> 
+</video>
+</div>
+
+<div id = "hidden2">
+<div style="background:#000;width:350px; height:260px;font:0px
+sans-serif;text-align:left;"><object
+classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="cdtw" width="350"
+height="240" style="outline:none"><param name="movie"
+value="http://countingdownto.com/c/w.swf" /><param name="flashvars"
+value="eid=261344" /><param name="allowscriptaccess" value="always"
+/><param name="bgcolor" value="#000000" /><embed name="cdtw"
+src="http://countingdownto.com/c/w.swf" flashvars="eid=261344"
+type="application/x-shockwave-flash" width="350" height="240"
+allowscriptaccess="always" bgcolor="#000000"
+style="outline:none"></embed></object><br/> <a
+href="http://countingdownto.com" style="font:bold 8px
+Arial;padding-left:19px;color:#444;">COUNTDOWN WIDGET</a></div>
+</div>
+
+
+<div id = "hidden3">
+</div>
+
+</body>
+</html>

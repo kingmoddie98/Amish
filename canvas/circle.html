@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>Sample Canvas Page</title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Darren Provine" />
+  <meta name="generator" content="vi" />
+  <link rel="shortcut icon" href="/~kilroy/Images/KilroyBrick.png" />
+  <script type="text/javascript" src="canvas.js"> </script>
+
+  <link rel="stylesheet" type="text/css" href="canvas.css" />
+  <link rel="stylesheet" type="text/css" href="webline.css" />
+</head>
+
+<body onload="setup();">
+
+<canvas id="circle" width="401" height="401"
+        onMouseUp="mouseUp(this);">
+This text is displayed if your browser does not support HTML5 Canvas.
+</canvas>
+
+<input type="button"
+       value="Blue Circle"
+       onclick="circle();" />
+
+
+<table id="webline">
+  <tr>
+    <td> <a href="http://elvis.rowan.edu/~kilroy/"
+            title="Link to my home page">
+             <img src="/~kilroy/Images/KilroyBrick.png" alt="" />
+             D. Provine
+         </a>
+    </td>
+
+    <td style="word-spacing:1em;">Valid:
+     <a href="http://validator.w3.org/check/referer">HTML5</a>
+     <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+     CSS3</a>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

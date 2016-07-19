@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en">
+<head>
+
+  <title>Home of the Fighting Amish</title>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Nathaniel Zimmerman" />
+  <meta name="generator" content="vi" />
+  <link rel="stylesheet" href="webline.css" />
+  <script type="text/javascript"
+          src="http://code.jquery.com/jquery-1.9.0.min.js"> </script>
+  <script type="text/javascript"
+          src="./AjaxFunctions.js"> </script>
+
+<script type="text/javascript">
+
+function Intro()
+{$("#page").fadeOut(3000);}
+
+</script>
+
+<title></title>
+<style type="text/css">
+
+@media (min-width: 700px) {
+
+
+#page {  position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #000000;
+   }  
+
+  #marquee {
+ 	left: 400px;
+			
+     }
+   #mp3 {
+
+                top: 600px;
+		left: 0px;
+                position: absolute;
+                
+            }
+  #right   {
+		top: 535px;
+		left: 1250px;
+		position: absolute;          
+
+		}
+ body
+{ 
+ background-color:#000000;
+ background-image:url('projector.png');
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ background-position:center; 
+
+        margin: 0 auto;
+        padding:0px;
+  }
+#wrapper { width: 700px;
+             left: 50%;
+             margin-left: -350px;
+             position: absolute;
+  }
+}
+
+</style>
+
+</head>
+'
+<body onload="setInterval(Intro,0);">
+<div id = "page">
+</div>
+
+<marquee align="center" width=600" height = "600"  scrollamount="2" 
+direction="up" loop="true"  
+onmouseover="this.stop();" onload ="this.fadeIn()"; 
+onmouseout="this.start();"> <font color="#8A4B08"><strong> 
+<a href="http://www.skirmish.com/">Please view the official Skirmish Site for more 
+info</a><br><br>
+2/26/13 - Added roster and status link, please check to see what you need to bring.<br><br>
+2/27/13 - Added dues, if your initial $110 has been paid, the additional money isnt due until the day
+before the event.<br><br>
+2/28/13 - Added Supplies List, please, please read and have everything ready. <br><br>
+3/8/13 - I have ordered six CO2 tanks, if you requested one from me, please confirm you want it. 
+<br><br>
+3/12/13 - Database for contact info is in beta, test if you can and 
+add your info.<br><br>
+3/26/13 - All our info is now located at the link below.<br>
+<a href = 'http://elvis.rowan.edu/~zimmer30/web/Amish/Amish_info.html'>Click to see all our 
+info</a><br><br>
+3/28/13 - First practice is set for Saturday March 30th at noon, please 
+contact me with your availability.<br><br>
+</strong></font></marquee>
+
+
+<div id = "right">
+<a href ="http://elvis.rowan.edu/~zimmer30/web/Amish/Amish_info.html"
+><img src = "./amish.png" alt = "Off to build a barn" height 
+="100"
+width="100"/></a >
+</div>
+
+
+<div id = "mp3">
+<embed src="PleaseBeKind.mp3" width="140" height="40" autostart="true" loop="FALSE"></embed>
+</div>
+
+
+<!--   
+
+
+<embed name="music_playlist"
+src="old_songs.m3u"
+width="150"
+height="90"
+loop="true"
+autostart="true"
+hidden = "false">
+</embed>
+-->
+
+</body>
+

@@ -1,0 +1,9 @@
+/* canvas.css - style for canvas
+ *
+ * D Provine, 26 Mar 2012
+ */
+
+canvas {
+    border: 1px solid black;
+    position: relative;
+}
